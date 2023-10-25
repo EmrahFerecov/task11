@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istifadeci melumatlari</title>
+    <link rel="stylesheet" href="./assets/s.css">
+    
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Istifadeci melumatlari</h1>
+
+    <form id="Form">
+        <label for="firstname">Ad:</label>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <label for="lastname">Soyad:</label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <label for="age">Yas:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="isMarried">Veziyyet:</label>
+        <select id="isMarried" name="isMarried" required>
+            <option value="evli">Evli</option>
+            <option value="bekar">Bekar</option>
+        </select><br><br>
+
+        <input type="submit" value="Istifadecini tesdiqle">
+    </form>
+
+    <table id="userTable">
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Yas</th>
+            <th>Veziyyeti</th>
+        </tr>
+    </table>
+
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
